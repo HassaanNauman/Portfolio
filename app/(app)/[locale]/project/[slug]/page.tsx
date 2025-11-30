@@ -1,5 +1,4 @@
 import React from 'react'
-import { Project } from '@/src/constants/data'
 import { notFound } from 'next/navigation'
 import ProjectTemplate from './_components/project-template'
 import { PROJECTS } from '@/src/constants/data'

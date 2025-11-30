@@ -15,7 +15,6 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from './ui/textarea'
-import { Icons } from './icons'
 import { toast } from 'sonner'
 import { useTranslations } from 'next-intl'
 import { AUTHOR } from '@/src/constants/data'

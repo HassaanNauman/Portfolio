@@ -32,7 +32,7 @@ export default async function Topbar({ locale }: { locale: Locales }) {
               {t('contact')}
             </Button>
           </Link>
-          <GithubStarBtn stars={0} />
+          <GithubStarBtn />
         </div>
       </div>
     </header>

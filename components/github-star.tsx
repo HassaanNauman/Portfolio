@@ -7,10 +7,8 @@ import { buttonVariants } from './ui/button'
 import { Icons } from './icons'
 
 export default function GithubStarBtn({
-  stars,
   className,
 }: {
-  stars: number
   className?: string
 }) {
   return (

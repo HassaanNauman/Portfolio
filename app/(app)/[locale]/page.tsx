@@ -178,7 +178,7 @@ export default function Home({
           </span>
         </h2>
 
-        <ProjectsSection locale={locale} />
+        <ProjectsSection />
       </section>
 
       <section className="max-w-6xl mx-auto py-20 mb-36" id="contact">

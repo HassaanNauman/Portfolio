@@ -38,7 +38,7 @@ export interface Project {
   githubLink?: string | null
   previewUrl?: string | null
   slug?: string
-  content?: any // For Lexical content if needed
+  content?: unknown // For Lexical content if needed
 }
 
 // Portfolio data
@@ -54,7 +54,7 @@ export const AUTHOR: Author = {
   description: 'I build web that builds brands.',
   summary:
     "I'm a full-stack developer with expertise in React, Next.js, Node.js, and MongoDB. I love creating modern, responsive web applications with a focus on user experience and performance. Currently working as a Frontend Developer at SelectSkillSet, I bring experience from my previous role as a Full Stack Developer at Tekisky.",
-  location: 'India',
+  location: '_',
   skills: [
     'Next.js 15',
     'React',
