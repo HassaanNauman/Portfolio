@@ -68,28 +68,35 @@ export default function Socials({ content }: { content: SocialsContent }) {
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
         {SOCIALS.map((social, index) => {
-          const Component = social.link ? Link : 'div'
-          const props = social.link
-            ? {
-                target: '_blank',
-                href: social.link,
-                rel: 'noopener noreferrer',
-              }
-            : {}
+          const className = `border p-4 flex items-center bg-background/30 ${
+            social.link
+              ? 'hover:bg-rose-500/5 hover:text-rose-500 transition-all cursor-pointer'
+              : 'cursor-default'
+          }`
+
+          if (social.link) {
+            return (
+              <Link
+                key={`${social.link || social.name}-${index}`}
+                target="_blank"
+                href={social.link}
+                rel="noopener noreferrer"
+                className={className}
+              >
+                <social.icon className="w-4 h-4 mr-2" />
+                <span className="font-cal translate-y-[2px]">{social.name}</span>
+              </Link>
+            )
+          }
 
           return (
-            <Component
+            <div
               key={`${social.link || social.name}-${index}`}
-              {...props}
-              className={`border p-4 flex items-center bg-background/30 ${
-                social.link
-                  ? 'hover:bg-rose-500/5 hover:text-rose-500 transition-all cursor-pointer'
-                  : 'cursor-default'
-              }`}
+              className={className}
             >
               <social.icon className="w-4 h-4 mr-2" />
               <span className="font-cal translate-y-[2px]">{social.name}</span>
-            </Component>
+            </div>
           )
         })}
       </div>
