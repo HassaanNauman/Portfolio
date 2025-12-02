@@ -44,8 +44,8 @@ export interface Project {
 // Portfolio data
 export const AUTHOR: Author = {
   _id: 'author-1',
-  name: 'Huzaif Ahmed',
-  initials: 'HA',
+  name: 'Hassaan Nauman',
+  initials: 'HN',
   avatar: {
     asset: {
       url: 'https://i.pinimg.com/736x/45/c9/30/45c930089bd6991ac39e475423a1bb61.jpg',
@@ -53,14 +53,12 @@ export const AUTHOR: Author = {
   },
   description: 'I build web that builds brands.',
   summary:
-    "I'm a full-stack developer with expertise in React, Next.js, Node.js, and MongoDB. I love creating modern, responsive web applications with a focus on user experience and performance. Currently working as a Frontend Developer at SelectSkillSet, I bring experience from my previous role as a Full Stack Developer at Tekisky.",
+    "I'm a full-stack developer with expertise in React, Node.js, and MongoDB. I love creating modern, responsive web applications with a focus on user experience and performance.Gaining hands-on experience through freelance tasks, volunteering, and self-initiated projects to better understand how things work in the real world.",
   location: '_',
   skills: [
-    'Next.js 15',
     'React',
     'TailwindCSS',
     'JavaScript',
-    'Framer Motion',
     'Node.js',
     'MongoDB',
     'Express.js',
@@ -70,8 +68,8 @@ export const AUTHOR: Author = {
     'Git',
   ],
   social: {
-    github: 'https://github.com/huzaifahmedz',
-    email: 'dev.huzaif@gmail.com',
+    github: 'https://github.com/HassaanNauman',
+    email: 'hassaan.nauman2008@gmail.com',
   },
 }
 
@@ -79,60 +77,60 @@ export const AUTHOR: Author = {
 export const PROJECTS: Project[] = [
   {
     _id: 'project-1',
-    title: 'AI-Powered Code Review Assistant',
+    title: 'AI-Powered Receipt Scanner',
     description:
-      'An intelligent code review platform that uses machine learning to analyze pull requests, detect bugs, suggest optimizations, and enforce coding standards. Features real-time collaboration, automated testing integration, and comprehensive security scanning.',
+      'An intelligent receipt scanner that uses machine learning to analyze receipts,  and comprehensive security scanning.',
     shortDescription:
-      'An intelligent code review platform that uses machine learning to analyze pull requests, detect bugs, and suggest optimizations.',
-    technologies: ['Python', 'TensorFlow', 'React', 'FastAPI', 'PostgreSQL', 'Docker'],
-    tags: ['Python', 'TensorFlow', 'React', 'FastAPI', 'PostgreSQL', 'Docker'],
+      'An intelligent receipt scanner that uses machine learning to analyze receipts, and automatically extract the data.',
+    technologies: ['TailwindCSS', 'JavaScript', 'React', 'Docker'],
+    tags: ['TailwindCSS', 'JavaScript', 'React',],
     image: {
       asset: {
         url: '/projects/project-1.webp',
       },
     },
     heroImage: '/projects/project-1.webp',
-    githubLink: '#',
-    previewUrl: '#',
+    githubLink: 'https://github.com/HassaanNauman/SCANKARO',
+    previewUrl: 'https://v0-receipt-scanning-app-three.vercel.app/',
     slug: 'ai-powered-code-review-assistant',
   },
   {
     _id: 'project-2',
-    title: 'Real-time Collaborative Whiteboard',
+    title: 'Prayer-Time-Tracker',
     description:
-      'A next-generation collaborative whiteboard platform with infinite canvas, real-time synchronization, and advanced drawing tools. Supports video conferencing, screen sharing, and export to multiple formats. Built for remote teams and educators.',
+      'A prayer time tracker that tracks the time of each prayer and the duration of each prayer.',
     shortDescription:
-      'A next-generation collaborative whiteboard platform with infinite canvas, real-time synchronization, and advanced drawing tools.',
-    technologies: ['TypeScript', 'WebRTC', 'Socket.io', 'Canvas API', 'Node.js', 'Redis'],
-    tags: ['TypeScript', 'WebRTC', 'Socket.io', 'Canvas API', 'Node.js', 'Redis'],
+      'A prayer time tracker that tracks the time of each prayer and the duration of each prayer.',
+    technologies: ['TailwindCSS', 'JavaScript', 'React'],
+    tags: ['TailwindCSS', 'JavaScript', 'html', 'css'],
     image: {
       asset: {
         url: '/projects/project-2.webp',
       },
     },
     heroImage: '/projects/project-2.webp',
-    githubLink: '#',
-    previewUrl: '#',
-    slug: 'real-time-collaborative-whiteboard',
+    githubLink: 'https://github.com/HassaanNauman/Prayer-Time',
+    previewUrl: 'https://hassaannauman.github.io/Prayer-Time/login.html',
+    slug: 'prayer-time-tracker',
   },
   {
     _id: 'project-3',
-    title: 'Blockchain Voting System',
+    title: 'blood group compatibility checker',
     description:
-      'A secure, transparent, and decentralized voting platform built on Ethereum. Features smart contract-based voting, anonymous ballots, real-time result tracking, and immutable audit trails. Ensures election integrity through cryptographic verification.',
+      'A blood group compatibility checker that checks if a person is compatible with a given blood group.',
     shortDescription:
-      'A secure, transparent, and decentralized voting platform built on Ethereum with smart contract-based voting and real-time tracking.',
-    technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'IPFS', 'MetaMask'],
-    tags: ['Solidity', 'Web3.js', 'React', 'Ethereum', 'IPFS', 'MetaMask'],
+      'A blood group compatibility checker that checks if a person is compatible with a given blood group.',
+    technologies: ['TailwindCSS', 'JavaScript', 'html', 'css'],
+    tags: ['TailwindCSS', 'JavaScript', 'html', 'css'],
     image: {
       asset: {
         url: '/projects/project-3.webp',
       },
     },
     heroImage: '/projects/project-3.webp',
-    githubLink: '#',
-    previewUrl: '#',
-    slug: 'blockchain-voting-system',
+    githubLink: 'https://github.com/HassaanNauman/Blood-Group-Compatibility-Checker?tab=readme-ov-file',
+    previewUrl: 'https://hassaannauman.github.io/Blood-Group-Compatibility-Checker/',
+    slug: 'blood-group-compatibility-checker',
   },
 ]
 

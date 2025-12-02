@@ -5,9 +5,13 @@ import {
   SiFivem,
   SiGithub,
   SiGmail,
+  SiJavascript,
   SiLinkedin,
+  SiMongodb,
   SiNextdotjs,
   SiOpenai,
+  SiReact,
+  SiTailwindcss,
 } from 'react-icons/si'
 import { FaStar } from 'react-icons/fa'
 import { cn } from '@/lib/utils'
@@ -18,9 +22,13 @@ export const Icons = {
   Logo: Command,
   Contact: Send,
   Next: SiNextdotjs,
+  React: SiReact,
+  JavaScript: SiJavascript,
   Android: SiAndroid,
   Fivem: SiFivem,
   OpenAI: SiOpenai,
+  Tailwind: SiTailwindcss,
+  MongoDB: SiMongodb,
   Github: SiGithub,
   Star: FaStar,
   LinkedIn: SiLinkedin,

@@ -65,7 +65,7 @@ export default function HeroSVG() {
           {/* Line 2 */}
           <text x="0" y="25" fill="#ffffff" fontSize="14" fontFamily="monospace" opacity="0.7">
             <tspan x="20">name: </tspan>
-            <tspan fill="#f43f5e">&apos;Huzaif&apos;</tspan>
+            <tspan fill="#f43f5e">&apos;Hassaan&apos;</tspan>
           </text>
 
           {/* Line 3 */}

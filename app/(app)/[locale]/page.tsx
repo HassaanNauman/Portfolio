@@ -4,10 +4,9 @@ import HeroSVG from '@/components/hero-svg'
 import { Icons } from '@/components/icons'
 import { CSSProperties, use } from 'react'
 import { Badge } from '@/components/ui/badge'
-import NextSvg from '@/public/assets/next.svg'
 import VercelSvg from '@/public/assets/vercel.svg'
 import GithubSvg from '@/public/assets/github.svg'
-import AndroidSvg from '@/public/assets/android.svg'
+import { SiJavascript, SiReact } from 'react-icons/si'
 import Link from 'next/link'
 import ContactForm from '@/components/contact-form'
 import { ProjectsSection } from './_components/ProjectsSection'
@@ -80,13 +79,15 @@ export default function Home({
                       {t('contactBtn')}
                     </Button>
                   </Link>
-                  <Button className="cursor-pointer" variant={'outline'} disabled>
-                    {t('downloadCvBtn')}
-                  </Button>
+                  <Link href="/assets/HassaanNauman_CV.pdf" download>
+                    <Button className="cursor-pointer" variant={'outline'}>
+                      {t('downloadCvBtn')}
+                    </Button>
+                  </Link>
                 </div>
                 <div className="flex items-center gap-2 mt-4">
                   <Badge variant={'default'} className="bg-white text-black hover:bg-white/90">
-                    <Icons.Next className="w-3 h-3 mr-1.5" /> NextJS
+                    <Icons.React className="w-3 h-3 mr-1.5" /> React JS
                   </Badge>
                   <Badge variant={'secondary'} className="bg-white text-black hover:bg-white/90">
                     <Icons.Android className="w-3 h-3 mr-1.5" /> Android
@@ -95,7 +96,13 @@ export default function Home({
                     <Icons.OpenAI className="w-3 h-3 mr-1.5" /> AI
                   </Badge>
                   <Badge variant={'outline'} className="bg-white text-black border-white/20 hover:bg-white/90">
-                    <Icons.Fivem className="w-3 h-3 mr-1.5" /> FiveM
+                    <Icons.JavaScript className="w-3 h-3 mr-1.5" /> JS
+                  </Badge>
+                  <Badge variant={'outline'} className="bg-white text-black border-white/20 hover:bg-white/90">
+                    <Icons.Tailwind className="w-3 h-3 mr-1.5" /> Tailwind
+                  </Badge>
+                  <Badge variant={'outline'} className="bg-white text-black border-white/20 hover:bg-white/90">
+                    <Icons.MongoDB className="w-3 h-3 mr-1.5" /> MongoDB
                   </Badge>
                 </div>
               </div>
@@ -125,14 +132,10 @@ export default function Home({
             <div className="mt-6">
               <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16">
                 <li>
-                  <Image
-                    alt="Next.JS"
-                    src={NextSvg}
-                    width={128}
-                    height={128}
-                    unoptimized
-                    className="h-8 w-28 px-2 dark:brightness-0 dark:invert"
-                  />
+                  <div className="h-8 w-28 px-2 flex items-center justify-center gap-2 text-black dark:text-white">
+                    <SiJavascript className="h-6 w-6" aria-label="JavaScript logo" />
+                    <span className="text-sm font-semibold">JavaScript</span>
+                  </div>
                 </li>
                 <li>
                   <Image
@@ -145,14 +148,10 @@ export default function Home({
                   />
                 </li>
                 <li>
-                  <Image
-                    alt="Android"
-                    src={AndroidSvg}
-                    width={128}
-                    height={128}
-                    unoptimized
-                    className="h-8 w-28 scale-150 px-2 dark:brightness-0 dark:invert"
-                  />
+                  <div className="h-8 w-28 px-2 flex items-center justify-center gap-2 text-black dark:text-white">
+                    <SiReact className="h-6 w-6" aria-label="React logo" />
+                    <span className="text-sm font-semibold">React</span>
+                  </div>
                 </li>
                 <li>
                   <Image

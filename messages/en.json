@@ -1,17 +1,17 @@
 {
   "Metadata": {
-    "titleTemplate": "%s | Huzaif Ahmed's Portfolio",
-    "titleDefault": "Huzaif Ahmed - Full-Stack Web Developer",
-    "description": "Portfolio of Huzaif Ahmed, a web developer specializing in responsive design, front-end, back-end, and modern web technologies.",
-    "keywords": "Huzaif Ahmed, Huzaif Ahmed Developer, Huzaif Ahmed Dev, Portfolio, Web Developer, Full-Stack, Front-End, Back-End, React, Next.js, Node.js, MongoDB, Responsive Design, Modern Websites, High-Quality Websites"
+    "titleTemplate": "%s | Hassaan Nauman's Portfolio",
+    "titleDefault": "Hassaan Nauman - Full-Stack Web Developer",
+    "description": "Portfolio of Hassaan Nauman, a web developer specializing in responsive design, front-end, back-end, and modern web technologies.",
+    "keywords": "Hassaan Nauman, Hassaan Nauman Developer, Hassaan Nauman Dev, Portfolio, Web Developer, Full-Stack, Front-End, Back-End, React, Node.js, MongoDB, Responsive Design, Modern Websites, High-Quality Websites"
   },
   "HomePage": {
     "hello": "Hello",
-    "name": "Huzaif Ahmed",
+    "name": "Hassaan Nauman",
     "about": {
       "1": "Most of the time I'm a",
       "2": "full-stack web developer",
-      "3": "with expertise in React, Next.js, Node.js, and MongoDB. I love creating modern, responsive web applications with a focus on user experience and performance. Currently working as a Frontend Developer at SelectSkillSet, I bring experience from my previous role as a Full Stack Developer at Tekisky."
+      "3": "with expertise in React,Node.js, and MongoDB. I love creating modern, responsive web applications with a focus on user experience and performance.Gaining hands-on experience through freelance tasks, volunteering, and self-initiated projects to better understand how things work in the real world."
     },
     "motto": "You can ask me anything or see my projects.",
     "contactBtn": "Contact me",

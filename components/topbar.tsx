@@ -15,9 +15,9 @@ export default async function Topbar({ locale }: { locale: Locales }) {
         <Link href="/" className="flex items-center gap-2">
           <Icons.Logo className="w-7 h-7" />
           <h2 className="font-cal translate-y-[2px] text-2xl">
-            Huzaif{' '}
+            Hassaan{' '}
             <span className="bg-linear-to-r from-rose-400 to-rose-600 bg-clip-text text-transparent">
-              Ahmed
+              Nauman
             </span>
           </h2>
         </Link>

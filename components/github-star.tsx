@@ -23,7 +23,7 @@ export default function GithubStarBtn({
       )}
       target="_blank"
       rel="noopener noreferrer"
-      href={'https://github.com/huzaifahmedz'}
+      href={'https://github.com/HassaanNauman'}
     >
       <div className="flex items-center">
         <Icons.Github />

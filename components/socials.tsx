@@ -22,14 +22,14 @@ export default function Socials({ content }: { content: SocialsContent }) {
   const SOCIALS = [
     {
       icon: Icons.Github,
-      name: 'huzaifahmedz',
+      name: 'HassaanNauman',
       link: content.socials.githubLink,
     },
     ...(content.socials.linkedInLink
       ? [
           {
             icon: Icons.LinkedIn,
-            name: 'Huzaif Ahmed',
+            name: 'Hassaan Nauman',
             link: content.socials.linkedInLink,
           },
         ]
@@ -59,6 +59,8 @@ export default function Socials({ content }: { content: SocialsContent }) {
       : []),
   ].filter((social) => social.link !== null || social.name)
 
+  const textClass = 'font-cal translate-y-[2px] break-all'
+
   return (
     <div className="p-8">
       <h3 className="text-2xl font-cal">{t('socials')}</h3>
@@ -66,9 +68,9 @@ export default function Socials({ content }: { content: SocialsContent }) {
         {t('socialsDescription')}
       </p>
 
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-15">
         {SOCIALS.map((social, index) => {
-          const className = `border p-4 flex items-center bg-background/30 ${
+          const className = `border p-4 flex items-center gap-3 bg-background/30 ${
             social.link
               ? 'hover:bg-rose-500/5 hover:text-rose-500 transition-all cursor-pointer'
               : 'cursor-default'
@@ -83,8 +85,8 @@ export default function Socials({ content }: { content: SocialsContent }) {
                 rel="noopener noreferrer"
                 className={className}
               >
-                <social.icon className="w-4 h-4 mr-2" />
-                <span className="font-cal translate-y-[2px]">{social.name}</span>
+                <social.icon className="w-6 h-6" aria-hidden />
+                <span className={textClass}>{social.name}</span>
               </Link>
             )
           }
@@ -94,8 +96,8 @@ export default function Socials({ content }: { content: SocialsContent }) {
               key={`${social.link || social.name}-${index}`}
               className={className}
             >
-              <social.icon className="w-4 h-4 mr-2" />
-              <span className="font-cal translate-y-[2px]">{social.name}</span>
+              <social.icon className="w-6 h-6" aria-hidden />
+              <span className={textClass}>{social.name}</span>
             </div>
           )
         })}

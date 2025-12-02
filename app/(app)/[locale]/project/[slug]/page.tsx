@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
       title: project.title,
       description: project.shortDescription,
       url: `/project/${project.slug}`,
-      siteName: "Huzaif Ahmed's Portfolio",
+      siteName: "Hassaan Nauman's Portfolio",
       images: [
         {
           url: imageUrl,
